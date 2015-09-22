@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Guest Hotels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Guest</th>
+      <th>Hotel</th>
+      <th>Nights</th>
+      <th>Checkin date</th>
+      <th>Checkout date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guest_hotels.each do |guest_hotel| %>
+      <tr>
+        <td><%= guest_hotel.guest_id %></td>
+        <td><%= guest_hotel.hotel_id %></td>
+        <td><%= guest_hotel.nights %></td>
+        <td><%= guest_hotel.checkin_date %></td>
+        <td><%= guest_hotel.checkout_date %></td>
+        <td><%= link_to 'Show', guest_hotel %></td>
+        <td><%= link_to 'Edit', edit_guest_hotel_path(guest_hotel) %></td>
+        <td><%= link_to 'Destroy', guest_hotel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Guest hotel', new_guest_hotel_path %>

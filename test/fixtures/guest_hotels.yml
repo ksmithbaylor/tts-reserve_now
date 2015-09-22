@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guest_id: 1
+  hotel_id: 1
+  nights: 1
+  checkin_date: 2015-09-21
+  checkout_date: 2015-09-21
+
+two:
+  guest_id: 1
+  hotel_id: 1
+  nights: 1
+  checkin_date: 2015-09-21
+  checkout_date: 2015-09-21

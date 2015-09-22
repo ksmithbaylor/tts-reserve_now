@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Guest:</strong>
+  <%= @guest_hotel.guest_id %>
+</p>
+
+<p>
+  <strong>Hotel:</strong>
+  <%= @guest_hotel.hotel_id %>
+</p>
+
+<p>
+  <strong>Nights:</strong>
+  <%= @guest_hotel.nights %>
+</p>
+
+<p>
+  <strong>Checkin date:</strong>
+  <%= @guest_hotel.checkin_date %>
+</p>
+
+<p>
+  <strong>Checkout date:</strong>
+  <%= @guest_hotel.checkout_date %>
+</p>
+
+<%= link_to 'Edit', edit_guest_hotel_path(@guest_hotel) %> |
+<%= link_to 'Back', guest_hotels_path %>
